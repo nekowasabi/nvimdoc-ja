@@ -960,6 +960,11 @@ vim.types						*vim.types*
 	to human-readable strings, second maps human-readable type names to 
 	values for |vim.type_idx|.  Currently contains pairs for `float`, 
 	`array` and `dictionary` types.
+	|vim.type_idx|の可能な値テーブル。2つのセットが含まれています。
+	1つめは、|vim.type_idx|が取り得る値を人間が読みやすい文字列への
+	マッピングです。
+	2つめは、人間が読みやすい型の名前を|vim.type_idx|の値へマッピングします。
+	現在、`float`, `array`, `dictionary`のペアを含みます。
 
 	Note: one must expect that values corresponding to `vim.types.float`, 
 	`vim.types.array` and `vim.types.dictionary` fall under only two 
