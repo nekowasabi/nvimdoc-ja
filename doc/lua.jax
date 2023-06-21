@@ -969,8 +969,13 @@ vim.types						*vim.types*
 	Note: one must expect that values corresponding to `vim.types.float`, 
 	`vim.types.array` and `vim.types.dictionary` fall under only two 
 	following assumptions:
+	注: |vim.types.float|、`|vim.types.array|、|vim.types.dictionary|に対応する値は、
+	以下の2つの仮定のみ該当すると想定しなければなりません。
 	1. Value may serve both as a key and as a value in a table.  Given the 
 	   properties of Lua tables this basically means “value is not `nil`”.
+	1. 値はテーブル内でキーとしても値としても機能する可能性があります。
+	   与えられたLuaテーブルのプロパティについて、これは基本的に「値が`nil`でない」ということを意味します。
+
 	2. For each value in `vim.types` table `vim.types[vim.types[value]]` 
 	   is the same as `value`.
 	No other restrictions are put on types, and it is not guaranteed that 
