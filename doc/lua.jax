@@ -978,6 +978,8 @@ vim.types						*vim.types*
 
 	2. For each value in `vim.types` table `vim.types[vim.types[value]]` 
 	   is the same as `value`.
+	2. `vim.types`テーブル内の値ごとに対して、`vim.types[vim.types[value]]`は`value`と同じです。
+
 	No other restrictions are put on types, and it is not guaranteed that 
 	values corresponding to `vim.types.float`, `vim.types.array` and 
 	`vim.types.dictionary` will not change or that `vim.types` table will 
