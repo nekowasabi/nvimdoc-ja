@@ -984,6 +984,10 @@ vim.types						*vim.types*
 	values corresponding to `vim.types.float`, `vim.types.array` and 
 	`vim.types.dictionary` will not change or that `vim.types` table will 
 	only contain values for these three types.
+        他の型に対する制限はなく、
+        vim.types.float、vim.types.array、vim.types.dictionaryに対応する値が変更されないことや、
+        vim.typesテーブルにこれら3つの型のみの値が含まれることは
+        保証されていません。
 
 ==============================================================================
 Lua module: vim                                                      *lua-vim*
