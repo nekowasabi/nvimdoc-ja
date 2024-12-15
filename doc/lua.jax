@@ -994,6 +994,7 @@ Lua module: vim                                                      *lua-vim*
 
 inspect({object}, {options})                                   *vim.inspect()*
                 Return a human-readable representation of the given object.
+		与えられたオブジェクトにタイ対して、人間が読みやすい表現を返却します。
 
                 See also: ~
                     https://github.com/kikito/inspect.lua
@@ -1002,8 +1003,11 @@ inspect({object}, {options})                                   *vim.inspect()*
 paste({lines}, {phase})                                          *vim.paste()*
                 Paste handler, invoked by |nvim_paste()| when a conforming UI
                 (such as the |TUI|) pastes text into the editor.
+		 |nvim_paste()| によって呼び出されるペーストハンドラです。
+		UI（TUIなど）確認時にエディタ内にテキストしたとき実行されます。
 
                 Example: To remove ANSI color codes when pasting: >
+		例: ペースト時に、ANSIカラーコードを削除するには:
 
                  vim.paste = (function(overridden)
                    return function(lines, phase)
