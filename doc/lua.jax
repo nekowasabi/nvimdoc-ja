@@ -994,7 +994,7 @@ Lua module: vim                                                      *lua-vim*
 
 inspect({object}, {options})                                   *vim.inspect()*
                 Return a human-readable representation of the given object.
-		与えられたオブジェクトにタイ対して、人間が読みやすい表現を返却します。
+		与えられたオブジェクトに対して、人間が読みやすい表現を返却します。
 
                 See also: ~
                     https://github.com/kikito/inspect.lua
@@ -1023,14 +1023,22 @@ paste({lines}, {phase})                                          *vim.paste()*
                 Parameters: ~
                     {lines}  |readfile()|-style list of lines to paste.
                              |channel-lines|
+                             |readfile()|-styleのリストでペーストする行。
                     {phase}  -1: "non-streaming" paste: the call contains all
                              lines. If paste is "streamed", `phase` indicates the stream state:
                              • 1: starts the paste (exactly once)
                              • 2: continues the paste (zero or more times)
                              • 3: ends the paste (exactly once)
+                             -1: "非ストリーミング" 形式のペースト:
+                             コールはすべての行を含みます。"streamed"ペーストの場合、
+                             `phase`はストリームの状態を示します。
+                             • 1: ペーストを開始（正確に1回）
+                             • 2: ペースを継続（0回またはそれ以上）
+                             • 3: ペーストを終了（正確に1回）
 
                 Return: ~
                     false if client should cancel the paste.
+                    ペーストをキャンセルする場合は、falseを返却します。
 
                 See also: ~
                     |paste|
