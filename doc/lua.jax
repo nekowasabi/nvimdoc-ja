@@ -1045,6 +1045,7 @@ paste({lines}, {phase})                                          *vim.paste()*
 
 schedule_wrap({cb})                                      *vim.schedule_wrap()*
                 Defers callback `cb` until the Nvim API is safe to call.
+		Nvim APIを安全に呼び出せるまで、コールバック `cb` を遅延させます。
 
                 See also: ~
                     |lua-loop-callbacks|
