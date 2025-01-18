@@ -1068,7 +1068,9 @@ deepcopy({orig})                                              *vim.deepcopy()*
 
                 Return: ~
                     New table of copied keys and (nested) values.
+		    コピーされたキーと（ネストされた）値の新しいテーブル。
 
+------ imakoko
 gsplit({s}, {sep}, {plain})                                     *vim.gsplit()*
                 Splits a string at each instance of a separator.
 
