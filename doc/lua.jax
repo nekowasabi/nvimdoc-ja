@@ -1070,24 +1070,29 @@ deepcopy({orig})                                              *vim.deepcopy()*
                     New table of copied keys and (nested) values.
 		    コピーされたキーと（ネストされた）値の新しいテーブル。
 
------- imakoko
 gsplit({s}, {sep}, {plain})                                     *vim.gsplit()*
                 Splits a string at each instance of a separator.
+		セパレータのインスタンスで文字列を分割します。
 
                 Parameters: ~
                     {s}      String to split
+		             分割対象となる文字列
                     {sep}    Separator string or pattern
+		             セパレータ文字列またはパターン
                     {plain}  If `true` use `sep` literally (passed to
                              String.find)
+			     trueの場合、`sep`を文字通りに使用します（String.findに渡されます）
 
                 Return: ~
                     Iterator over the split components
+		    分割されたコンポーネントのイテレータ
 
                 See also: ~
                     |vim.split()|
                     https://www.lua.org/pil/20.2.html
                     http://lua-users.org/wiki/StringLibraryTutorial
 
+------ imakoko
 split({s}, {sep}, {plain})                                       *vim.split()*
                 Splits a string at each instance of a separator.
 
