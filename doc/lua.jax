@@ -1092,9 +1092,10 @@ gsplit({s}, {sep}, {plain})                                     *vim.gsplit()*
                     https://www.lua.org/pil/20.2.html
                     http://lua-users.org/wiki/StringLibraryTutorial
 
------- imakoko
 split({s}, {sep}, {plain})                                       *vim.split()*
                 Splits a string at each instance of a separator.
+                セパレータごとに文字列を分割します。
+------ imakoko
 
                 Examples: >
                  split(":aa::b:", ":")     --> {'','aa','','bb',''}
