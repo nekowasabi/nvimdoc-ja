@@ -1095,7 +1095,6 @@ gsplit({s}, {sep}, {plain})                                     *vim.gsplit()*
 split({s}, {sep}, {plain})                                       *vim.split()*
                 Splits a string at each instance of a separator.
                 セパレータごとに文字列を分割します。
------- imakoko
 
                 Examples: >
                  split(":aa::b:", ":")     --> {'','aa','','bb',''}
@@ -1105,16 +1104,22 @@ split({s}, {sep}, {plain})                                       *vim.split()*
 
                 Parameters: ~
                     {s}      String to split
+		    {s}      分割対象となる文字列
                     {sep}    Separator string or pattern
+		    {sep}    セパレータ文字列またはパターン
                     {plain}  If `true` use `sep` literally (passed to
                              String.find)
+			     trueの場合、`sep`を文字通りに使用します（String.findに渡されます）
+
 
                 Return: ~
                     List-like table of the split components.
+		    分割されたコンポーネントリストのようなテーブル
 
                 See also: ~
                     |vim.gsplit()|
 
+------ imakoko
 tbl_keys({t})                                                 *vim.tbl_keys()*
                 Return a list of all keys used in a table. However, the order
                 of the return table of keys is not guaranteed.
