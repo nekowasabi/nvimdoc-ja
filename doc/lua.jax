@@ -1119,20 +1119,24 @@ split({s}, {sep}, {plain})                                       *vim.split()*
                 See also: ~
                     |vim.gsplit()|
 
------- imakoko
 tbl_keys({t})                                                 *vim.tbl_keys()*
                 Return a list of all keys used in a table. However, the order
                 of the return table of keys is not guaranteed.
+		テーブル内で使用されている全てのキーを返却します。
+		しかし、返却されるキーのテーブルの順序は保証されません。
 
                 Parameters: ~
                     {t}  Table
+		    {t}  テーブル
 
                 Return: ~
                     list of keys
+		    キーのリスト
 
                 See also: ~
                     Fromhttps://github.com/premake/premake-core/blob/master/src/base/table.lua
 
+------ imakoko
 tbl_values({t})                                             *vim.tbl_values()*
                 Return a list of all values used in a table. However, the
                 order of the return table of values is not guaranteed.
