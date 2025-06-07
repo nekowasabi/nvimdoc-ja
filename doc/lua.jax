@@ -1136,27 +1136,36 @@ tbl_keys({t})                                                 *vim.tbl_keys()*
                 See also: ~
                     Fromhttps://github.com/premake/premake-core/blob/master/src/base/table.lua
 
------- imakoko
 tbl_values({t})                                             *vim.tbl_values()*
                 Return a list of all values used in a table. However, the
                 order of the return table of values is not guaranteed.
+		テーブル内で使用している全ての値のリストを返却します。
+		しかし、テーブルの返却値の順番は保証されません。
 
                 Parameters: ~
                     {t}  Table
+                    {t}  テーブル
+
 
                 Return: ~
                     list of values
+		    値のリスト
 
 tbl_contains({t}, {value})                                *vim.tbl_contains()*
                 Checks if a list-like (vector) table contains `value` .
+		リストのような（ベクター）テーブルが`value`を含むかチェックします。
 
                 Parameters: ~
                     {t}      Table to check
+                    {t}      チェックするテーブル
                     {value}  Value to compare
+                    {value}  比較する値
 
                 Return: ~
                     true if `t` contains `value`
+		    `t`が`value`を含む場合はtrue
 
+------ imakoko
 tbl_isempty({t})                                           *vim.tbl_isempty()*
                 See also: ~
                     Fromhttps://github.com/premake/premake-core/blob/master/src/base/table.lua@paramt Table to check
