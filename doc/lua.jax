@@ -1165,13 +1165,14 @@ tbl_contains({t}, {value})                                *vim.tbl_contains()*
                     true if `t` contains `value`
 		    `t`が`value`を含む場合はtrue
 
------- imakoko
 tbl_isempty({t})                                           *vim.tbl_isempty()*
                 See also: ~
                     Fromhttps://github.com/premake/premake-core/blob/master/src/base/table.lua@paramt Table to check
 
 tbl_extend({behavior}, {...})                               *vim.tbl_extend()*
+------ imakoko
                 Merges two or more map-like tables.
+                2つ以上ののマップのようなテーブルをマージします。
 
                 Parameters: ~
                     {behavior}  Decides what to do if a key is found in more
@@ -1179,7 +1180,12 @@ tbl_extend({behavior}, {...})                               *vim.tbl_extend()*
                                 • "error": raise an error
                                 • "keep": use value from the leftmost map
                                 • "force": use value from the rightmost map
+                                キーが複数のマップで見つかった場合にどうするかを決定します。
+                                • "error": エラーを発生させる
+                                • "keep": 左端のマップの値を使用する
+                                • "force": 右端のマップの値を使用する
                     {...}       Two or more map-like tables.
+                                2つ以上のマップのようなテーブル
 
                 See also: ~
                     |extend()|
