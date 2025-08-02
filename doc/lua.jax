@@ -1170,7 +1170,6 @@ tbl_isempty({t})                                           *vim.tbl_isempty()*
                     Fromhttps://github.com/premake/premake-core/blob/master/src/base/table.lua@paramt Table to check
 
 tbl_extend({behavior}, {...})                               *vim.tbl_extend()*
------- imakoko
                 Merges two or more map-like tables.
                 2つ以上ののマップのようなテーブルをマージします。
 
@@ -1197,9 +1196,13 @@ tbl_add_reverse_lookup({o})                     *vim.tbl_add_reverse_lookup()*
                 Add the reverse lookup values to an existing table. For
                 example: `tbl_add_reverse_lookup { A = 1 } == { [1] = 'A', A =
                 1 }`
+		既存のテーブルに、逆引き値を追加します。
+		例. `tbl_add_reverse_lookup { A = 1 } == { [1] = 'A', A = 1 }`
 
                 Parameters: ~
                     {o}  table The table to add the reverse to.
+                    {o}  テーブル 逆引きを追加するテーブル
+------ imakoko
 
 list_extend({dst}, {src}, {start}, {finish})               *vim.list_extend()*
                 Extends a list-like table with the values of another list-like
