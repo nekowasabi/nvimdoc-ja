@@ -1202,19 +1202,24 @@ tbl_add_reverse_lookup({o})                     *vim.tbl_add_reverse_lookup()*
                 Parameters: ~
                     {o}  table The table to add the reverse to.
                     {o}  テーブル 逆引きを追加するテーブル
------- imakoko
 
 list_extend({dst}, {src}, {start}, {finish})               *vim.list_extend()*
                 Extends a list-like table with the values of another list-like
                 table.
+		別のリストのようなテーブルの値で、リストのようなテーブルを拡張します。
 
                 NOTE: This mutates dst!
+		注意: これはdstを変異させます!
 
                 Parameters: ~
                     {dst}     list which will be modified and appended to.
+		              変更そして追加されるとリスト
                     {src}     list from which values will be inserted.
+		              値が挿入されるリスト
                     {start}   Start index on src. defaults to 1
+		              src開始インデックス。標準で1
                     {finish}  Final index on src. defaults to #src
+		              src最終インデックス。標準で#src
 
                 Return: ~
                     dst
@@ -1223,6 +1228,7 @@ list_extend({dst}, {src}, {start}, {finish})               *vim.list_extend()*
                     |vim.tbl_extend()|
 
 tbl_flatten({t})                                           *vim.tbl_flatten()*
+------ imakoko
                 Creates a copy of a list-like table such that any nested
                 tables are "unrolled" and appended to the result.
 
