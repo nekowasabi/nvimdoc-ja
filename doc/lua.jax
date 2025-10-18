@@ -1228,20 +1228,24 @@ list_extend({dst}, {src}, {start}, {finish})               *vim.list_extend()*
                     |vim.tbl_extend()|
 
 tbl_flatten({t})                                           *vim.tbl_flatten()*
------- imakoko
                 Creates a copy of a list-like table such that any nested
                 tables are "unrolled" and appended to the result.
+                ネストされたテーブルが"展開"され、結果に追加されるように、
+                リストのようなテーブルのコピーを作成します。
 
                 Parameters: ~
                     {t}  List-like table
+                    {t}  リストのようなテーブル
 
                 Return: ~
                     Flattened copy of the given list-like table.
+                    与えられたリストのようなテーブルの、フラット化されたコピー。
 
                 See also: ~
                     Fromhttps://github.com/premake/premake-core/blob/master/src/base/table.lua
 
 tbl_islist({t})                                             *vim.tbl_islist()*
+------ imakoko
                 Table
 
                 Return: ~
