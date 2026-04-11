@@ -1245,26 +1245,31 @@ tbl_flatten({t})                                           *vim.tbl_flatten()*
                     Fromhttps://github.com/premake/premake-core/blob/master/src/base/table.lua
 
 tbl_islist({t})                                             *vim.tbl_islist()*
------- imakoko
                 Table
 
                 Return: ~
                     true: A non-empty array, false: A non-empty table, nil: An
                     empty table
+                    true: 空でない配列、false: 空でないテーブル、nil:
+                    空のテーブル
 
 trim({s})                                                         *vim.trim()*
                 Trim whitespace (Lua pattern "%s") from both sides of a
                 string.
+                文字列の両端から空白（Luaパターン"%s"）を除去します。
 
                 Parameters: ~
                     {s}  String to trim
+                    {s}  除去する文字列
 
                 Return: ~
                     String with whitespace removed from its beginning and end
+                    文字列の先頭と末尾から空白が除去された文字列
 
                 See also: ~
                     https://www.lua.org/pil/20.2.html
 
+------ imakoko
 pesc({s})                                                         *vim.pesc()*
                 Escapes magic chars in a Lua pattern string.
 
