@@ -1269,21 +1269,24 @@ trim({s})                                                         *vim.trim()*
                 See also: ~
                     https://www.lua.org/pil/20.2.html
 
------- imakoko
 pesc({s})                                                         *vim.pesc()*
                 Escapes magic chars in a Lua pattern string.
+		Luaのパターン文字列内のマジック文字をエスケープします。
 
                 Parameters: ~
                     {s}  String to escape
+		    {s}  エスケープする文字列
 
                 Return: ~
                     %-escaped pattern string
+		    %-エスケープされたパターン文字列
 
                 See also: ~
                     https://github.com/rxi/lume
 
 validate({opt})                                               *vim.validate()*
                 Validates a parameter specification (types and values).
+		パラメータ仕様（型と値）を検証します。
 
                 Usage example: >
 
@@ -1297,7 +1300,9 @@ validate({opt})                                               *vim.validate()*
                   end
 <
 
-                Examples with explicit argument values (can be run directly): >
+                Examples with explicit argument values (can be run directly):
+		明確な引数値を使用した例（直接実行できます）: >
+
 
                   vim.validate{arg1={{'foo'}, 'table'}, arg2={'foo', 'string'}}
                      => NOP (success)
@@ -1334,11 +1339,13 @@ validate({opt})                                               *vim.validate()*
 
 is_callable({f})                                           *vim.is_callable()*
                 Returns true if object `f` can be called as a function.
+		オブジェクト `f` が関数として呼び出せる場合はtrueを返却します。
 
                 Parameters: ~
                     {f}  Any object
 
                 Return: ~
                     true if `f` is callable, else false
+		    `f`が呼び出し可能な場合はtrue、そうでない場合はfalse
 
  vim:tw=78:ts=8:ft=help:norl:
